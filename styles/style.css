@@ -22,3 +22,9 @@ h1 {
   max-width: 600px;
   width: 90%;
 }
+.menu-card h2 {
+  margin-top: 1.5rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}

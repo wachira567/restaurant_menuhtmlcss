@@ -33,3 +33,6 @@ h1 {
   padding-left: 1rem;
   position: relative;
 }
+.menu-card ul {
+  padding: 0;
+}

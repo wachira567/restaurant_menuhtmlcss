@@ -36,3 +36,12 @@ h1 {
 .menu-card ul {
   padding: 0;
 }
+.price {
+  float: right;
+}
+
+.soups li {
+  overflow: auto;
+  list-style: none;
+  padding-right: 20px;
+}

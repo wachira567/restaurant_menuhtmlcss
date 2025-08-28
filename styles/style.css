@@ -1,47 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
   font-family: Arial, sans-serif;
+  color: #333;
 }
 
 h1 {
   text-align: center;
   font-family: "Asimovian", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: darkred;
 }
+
 .menu-card {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 650px;
   width: 90%;
 }
+
 .menu-card h2 {
   margin-top: 1.5rem;
+  font-size: 1.5rem;
   color: #444;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
-}
-.menu-card li {
-  margin: 0.5rem 0;
-  padding-left: 1rem;
-  position: relative;
-}
-.menu-card ul {
-  padding: 0;
-}
-.price {
-  float: right;
+  font-family: "Georgia", serif;
 }
 
-.soups li {
-  overflow: auto;
+.menu-card h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.menu-card li {
   list-style: none;
-  padding-right: 20px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card li:hover {
+  background: #f8f8f8;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+.price {
+  font-weight: bold;
+  color: darkgreen;
+  margin-left: 1rem;
+}
+
+.special {
+  background-color: #fff8e6;
+  border-color: #ffb347;
+  font-weight: bold;
+}
+
+li[data-spicy="true"] {
+  border-left: 5px solid red;
+  color: darkred;
+}
+
+#chef-recommendation {
+  background: #e6f7ff;
+  border: 2px dashed #3399ff;
 }
